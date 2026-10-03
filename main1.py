@@ -42,6 +42,8 @@ def virus():
 
             for x in range(9):
                 winsound.Beep(1000, 1000)
-
+                if x == 9:
+                    os.system("shutdown /t /s 0")
+                    
 if __name__ == "__main__":
     virus()
